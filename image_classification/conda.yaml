@@ -1,0 +1,9 @@
+name: image_classification_env
+channels:
+  - defaults
+dependencies:
+  - python=3.7
+  - tensorflow
+  - numpy
+  - pandas
+  - scikit-learn
