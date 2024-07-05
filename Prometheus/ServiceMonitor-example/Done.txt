@@ -1,0 +1,7 @@
+# first i've just modified the Prometheus installed by Helm, by usin the commande  "kubectl edit prometheus prometheus-stack-kube-prom-prometheus"
+# I just change the matchLabels of ServiceMonitorSelector which was "realease: prometheus-stack": 
+  serviceAccountName: prometheus-stack-kube-prom-prometheus
+  serviceMonitorNamespaceSelector: {}
+  serviceMonitorSelector:
+    matchLabels:
+      team: frontend
