@@ -1,0 +1,5 @@
+spec:
+  serviceMonitorSelector:
+    matchLabels:
+      release: "prometheus-stack"
+      team: "frontend"
